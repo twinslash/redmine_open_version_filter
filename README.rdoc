@@ -1,0 +1,3 @@
+= Redmine Open Version Filter
+
+This plugin adds a new filter 'in open versions'
