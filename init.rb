@@ -1,3 +1,5 @@
+require 'redmine_open_version_filter'
+
 Redmine::Plugin.register :redmine_open_version_filter do
   name 'Redmine Open Version Filter plugin'
   author '//Twinslash'
