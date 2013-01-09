@@ -1,4 +1,6 @@
+require 'redmine'
 require 'redmine_open_version_filter'
+require_dependency 'redmine_open_version_filter/hooks'
 
 Redmine::Plugin.register :redmine_open_version_filter do
   name 'Redmine Open Version Filter plugin'
