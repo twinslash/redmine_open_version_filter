@@ -1,4 +1,0 @@
-= Redmine Open Version Filter
-
-This plugin adds a new filter 'in open versions'.
-If this filter is enabled then user will see issues belong to versions which are "open" and have *date*. This behaviour allows admin create opened versions without date and add issues to these versions. And users will not see these future tasks when they apply the filter.
