@@ -27,7 +27,7 @@ module OpenVersionFilterQueryPatch
       filters.merge!('out_of_opened_versions' =>
         {:type => :out_of_opened_versions,
          :values => [],
-         :order => 17,
+         :order => 16,
          :name => l("field_out_of_opened_versions")})
     end
 
