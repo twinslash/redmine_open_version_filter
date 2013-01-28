@@ -1,28 +1,14 @@
-// this is patch for js function from core
-function addFilter(field, operator, values) {
-  var fieldId = field.replace('.', '_');
-  var tr = $('#tr_'+fieldId);
-  if (tr.length > 0) {
-    tr.show();
+buildFilterRowWithoutOpenVersion = buildFilterRow;
+
+function buildFilterRow(field, operator, values) {
+  if (field == 'in_open_versions') {
+    buildFilterRowWithOpenVersion(field, operator, values);
   } else {
-    // ========= patch start ============
-    if (field == 'in_open_versions') {
-      buildFilterRowPatch(field, operator, values);
-    } else {
-      buildFilterRow(field, operator, values);
-    }
-    // ========= patch end ============
+    buildFilterRowWithoutOpenVersion(field, operator, values);
   }
-  $('#cb_'+fieldId).attr('checked', true);
-  toggleFilter(field);
-  $('#add_filter_select').val('').children('option').each(function(){
-    if ($(this).attr('value') == field) {
-      $(this).attr('disabled', true);
-    }
-  });
 }
 
-function buildFilterRowPatch(field, operator, values) {
+function buildFilterRowWithOpenVersion(field, operator, values) {
   var fieldId = field.replace('.', '_');
   var filterTable = $("#filters-table");
   var filterOptions = availableFilters[field];
