@@ -1,3 +1,4 @@
 # English strings go here for Rails i18n
 en:
   field_in_open_versions: 'In open versions'
+  field_out_of_opened_versions: 'Out of opened versions'

@@ -1,3 +1,4 @@
 # Russian strings go here for Rails i18n
 ru:
   field_in_open_versions: 'В открытых версиях'
+  field_out_of_opened_versions: 'Вне открытых версиях'
