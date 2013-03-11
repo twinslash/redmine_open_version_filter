@@ -7,3 +7,20 @@ If this filter is enabled then user will see issues belong to versions which are
 
 * **Out of opened versions**.
 If this filter is enabled then user will see issues without version or in versions without date. This filter should help Project Managers control future tasks.
+
+## Installation
+To install the plugin run clone from plugin directory (REDMINE/plugins):
+```bash
+cd REDMINE/plugins
+git clone https://github.com/twinslash/redmine_open_version_filter.git
+```
+Restart your Redmine server
+
+## Uninstallation
+Delete folder with the plugin
+```bash
+cd REDMINE/plugins
+rm redmine_open_version_filter -rf
+```
+
+Restart your Redmine server
