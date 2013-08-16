@@ -1,0 +1,5 @@
+v 0.0.2
+  - apply filter for subprojects
+
+v 0.0.1
+  - filter for "open versions"
